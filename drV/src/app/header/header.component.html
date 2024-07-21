@@ -1,0 +1,33 @@
+<header>
+<div class="navbar">
+    <div class="logo"><img src="../../assets/favicon.ico" alt="icon"></div>
+        <ul class="links">
+            <li><a routerLink="/home">Dr.V</a></li>
+            <li><a routerLink="/about-us">За нас</a></li>
+            <li><a routerLink="/before-after">Преди и След</a></li>
+            <li><a routerLink="/treatments">Лечения</a></li>
+            <li><a routerLink="/blog">Полезна информация</a></li>
+            <li><a routerLink="/contact-us">Свържете се с нас</a></li>
+        </ul>
+        <div class="toggle-btn" (click)="openDropdown()">
+            <ng-container *ngIf="!isOpen">
+                <i class="fa-duotone fa-solid fa-bars"></i>
+            </ng-container>
+            <ng-container *ngIf="isOpen">
+                <i class="fa-duotone fa-solid fa-xmark"></i>
+            </ng-container>
+            
+        </div>
+    </div>
+
+    <div class="dropdown-menu" [class.open]="isOpen">
+        <ul class="links">
+            <li><a routerLink="/home">Dr.V</a></li>
+            <li><a routerLink="/about-us">За нас</a></li>
+            <li><a routerLink="/before-after">Преди и След</a></li>
+            <li><a routerLink="/treatments">Лечения</a></li>
+            <li><a routerLink="/blog">Полезна информация</a></li>
+            <li><a routerLink="/contact-us">Свържете се с нас</a></li>
+        </ul>
+    </div>
+</header>
