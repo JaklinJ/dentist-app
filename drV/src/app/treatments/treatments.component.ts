@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-treatments',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./treatments.component.css']
 })
 export class TreatmentsComponent {
+  isExpanded: boolean = false;
 
-}
+  toggleReadMore() {
+    this.isExpanded = !this.isExpanded;
+    //Implement toogle functionality showing and hiding content
+    }
+
+
+  }
