@@ -21,7 +21,7 @@ li {
 
  a {
     text-decoration: none;
-    color: darkcyan;
+    color: rgb(13, 67, 67);
     font-weight: 600;
     font-size: 1.2em;
 }
@@ -45,6 +45,7 @@ header {
 
 /* Dropdown Menu */
 .dropdown-menu {
+    z-index: 4;
     display: none;
     position: absolute;
     right: 2rem;
