@@ -1,3 +1,11 @@
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 2rem;
+}
+
 div.navbar {
     padding: 2em;
     width: 100%;
@@ -29,10 +37,6 @@ li {
 div ul li a:hover {
     color: rgb(59, 91, 81);
     cursor: pointer;
-}
-header {
-    position: relative;
-    padding: 0 2rem;
 }
 
 .navbar .toggle-btn {

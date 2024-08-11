@@ -7,3 +7,13 @@
 body {
     font: 14px/1.5 'Lato', sans-serif;
 }
+
+@media(min-width: 1200px) {
+    body {
+        font: 20px/1.5 'Lato',sans-serif;
+    }
+
+    button, table, section {
+        font: inherit;
+    }
+}
