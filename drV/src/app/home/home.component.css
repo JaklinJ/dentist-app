@@ -32,3 +32,13 @@ section {
 
 }
 
+div.buttons {
+    margin: 2em;
+}
+
+button {
+    margin: 1.5em;
+    padding: 1em;
+    border-radius: 20px;
+    position: bottom;
+}
