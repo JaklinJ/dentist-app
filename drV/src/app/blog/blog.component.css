@@ -1,0 +1,33 @@
+h2 {
+    margin-top: 80px;
+    font-size: 2em;
+    margin-right: 2em;
+    flex-grow: 1;
+}
+
+div.intro {
+    display: flex;
+    padding: 1em;
+}
+
+div.questions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+mat-expansion-panel{
+    padding: 1em;
+}
+mat-expansion-panel-header {
+    padding: 1em;
+}
+mat-expansion-panel-content {
+    padding: 1em;
+}
+
+div.info {
+    padding: 2em;
+    width: 40%;
+    flex-wrap: wrap;
+}
