@@ -10,6 +10,11 @@ div.intro {
     padding: 1em;
 }
 
+h4 {
+    padding-top: 2em;
+    text-align: center;
+}
+
 div.questions {
     display: flex;
     flex-direction: row;
