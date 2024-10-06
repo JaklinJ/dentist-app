@@ -1,75 +1,63 @@
-h1 {
-    text-align: center;
-    padding-top: 80px;
+* { box-sizing: border-box; }
+
+div.container {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1em;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;    
+div.logo {
+    z-index: 0;
+    margin-top: 4em;
+    
 }
-article {
+
+div.treatments-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+div.logo img {
+    width: 100%;
+    height: 500px;
+    filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+div.treatmentOne {
     margin: 2em;
     padding: 2em;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    
 }
 
-.treatmentOne {
-    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../assets/images/european-young-woman-smiling-while-600nw-1938573235.webp');
-    background-size: cover;
-    color: white;
-}
 
-.treatmentTwo {
-    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../assets/images/cosmetic-dentist-in-Birmingham.jpg');
-    background-size: cover;
-    color: white;
-}
-.treatmentThree {
-    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../assets/images/veneers.jpg');
-    background-size: cover;
-    color: white;
-}
-.treatmentFour {
-    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../assets/images/healthy-woman-teeth-dentist-mouth-260nw-143745607.webp');
-    background-size: cover;
-    color: white;
-
-}
-
-article p span #less {
+div.treatmentOne p span #less {
     display: inline;
 }
 
-article p span #more {
+div.treatmentOne p span #more {
     display: none;
 }
 
 h2 {
     text-align: center;
-    margin: 2em;
+    margin-top: 0em;
     font-size: 2em;
 
-}
-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.gettingStarted {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.first .second .third {
-    display: block;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    width: 28%;
 }
 
 img {
@@ -92,12 +80,87 @@ h3 {
     font-weight: bolder;
 }
 
+div.getStarted {
+    display: inline;
+}
+
+.first .second .third {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    margin: 1em;
+    border: 0;
+    width: 28%;
+}
+
+.first img, 
+.second img,
+.third img {
+    width: auto;
+    height: 100px;
+}
+
+.first p, 
+.second p,
+.third p {
+    width: 50px;
+}
+
+.first h4 {
+    color: rgb(10, 75, 75);
+}
+
+.treatmentOne {
+    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../assets/images/european-young-woman-smiling-while-600nw-1938573235.webp');
+    background-size: cover;
+    color: white;
+    padding:20px;
+    margin: 1em;
+    text-align: center;
+}
+
+div .treatmentOne.a {
+    grid-column: 1/2;
+    grid-row: 1/2
+}
+
+div .treatmentOne.c {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+div .treatmentOne.c {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+div .treatmentOne.d {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+div .treatmentOne.e {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+div .treatmentOne.f {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+div .treatmentOne.g {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+
 @media (max-width: 920px) {
     .container {
         flex-direction: column;
         align-items: center;        
     }
-    article {
+    div.treatmentOne {
         margin: 1em;
         padding: 1em;
         width: 70%;

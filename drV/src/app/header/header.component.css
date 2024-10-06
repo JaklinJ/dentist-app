@@ -14,13 +14,14 @@ div.navbar {
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    background-color: white;
+    background: white;
     opacity: 0.8;
+    z-index: 4;
 }
 
 div ul.links {
     display: flex;
-    gap: 1em;
+    gap: 3em;
 }
 
 li {
@@ -29,14 +30,16 @@ li {
 
  a {
     text-decoration: none;
-    color: rgb(13, 67, 67);
+    font-family: "sans-serif", lato;
+    color: darkcyan;
     font-weight: 600;
     font-size: 1.2em;
 }
 
 div ul li a:hover {
-    color: rgb(59, 91, 81);
+    color: goldenrod;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .navbar .toggle-btn {

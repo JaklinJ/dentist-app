@@ -1,5 +1,5 @@
 section {
-    background-color: rgb(26, 101, 101);
+    background: linear-gradient(90deg, rgb(95, 191, 197) 0%, rgb(38, 98, 136) 100%);
     position: fixed;
     left: 0;
     bottom: 0;

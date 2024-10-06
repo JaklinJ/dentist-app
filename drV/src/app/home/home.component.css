@@ -18,7 +18,7 @@ section {
 .content {
     margin: 10em 32px 0 32px;
     display: block;
-    background-color: darkcyan;
+    background: linear-gradient(90deg, rgb(95, 191, 197) 0%, rgb(38, 98, 136) 100%);
     opacity: 0.7;
 } 
 
@@ -43,10 +43,11 @@ button {
     border-radius: 20px;
     position: bottom;
     border: 1px solid gray;
+    background-color: white;
 }
 
 button:hover {
-    background-color: darkcyan;
+    background: linear-gradient(90deg, rgb(95, 191, 197) 0%, rgb(38, 98, 136) 100%);
     color: white;
     border: none
 }
