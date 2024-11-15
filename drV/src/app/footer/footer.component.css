@@ -21,7 +21,17 @@ section {
     flex-direction: row;
 }
 
- span {
+span {
     padding: 1em;
     text-align: center;
+ }
+
+span a {
+    text-decoration: none;
+    color: white;
+ }
+
+ span a:hover {
+    color: darkblue;
+
  }
