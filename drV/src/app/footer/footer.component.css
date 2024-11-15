@@ -1,9 +1,27 @@
 section {
     background: linear-gradient(90deg, rgb(95, 191, 197) 0%, rgb(38, 98, 136) 100%);
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     color: white;
     text-align: center;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+
+.aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+ span {
+    padding: 1em;
+    text-align: center;
+ }
