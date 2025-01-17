@@ -10,50 +10,125 @@
 <div class="container">
     <div class="treatmentOne a">
         <h4>Ендодонтско лечение под микроскоп</h4>
-        <p>
+
+        <!-- Trying something new for the readMoreLessButton -->
+
+        <!-- <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, dignissimos!
             <span id="less">...</span><span id="more">
                 Reading more of this article somehow
             </span>
-        </p>
-        <button (click)="toggleReadMore()">Прочети повече</button>
+        </p> -->
+        <div *ngIf="content.length <= 150; else longContent">
+            <!-- <p>{{ content }}</p> -->
+          </div>
+          <ng-template #longContent>
+            <!-- Display shortened content -->
+            <p>{{ content.slice(0, 150) }}...</p>
+            <!-- Implement "Read More/Less" button -->
+            <button (click)="toggleReadMore()">Read {{ isExpanded ? 'Less' : 'More' }}</button>
+          </ng-template>
+            <p *ngIf="!isExpanded">{{ content.slice(0, 150) }}...</p>
+            <p *ngIf="isExpanded">{{ content }}</p>
+            <button (click)="toggleReadMore()">Прочети повече {{ isExpanded ? 'Less' : 'More' }}</button>
     </div>
 
     <div class="treatmentOne b">
         <h4>Поставяне на дентални импланти</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus.</p>
-        <button (click)="toggleReadMore()">Прочети повече</button>
+        <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus.</p> -->
+        <div *ngIf="content.length <= 150; else longContent">
+            <!-- <p>{{ content }}</p> -->
+          </div>
+          <ng-template #longContent>
+            <!-- Display shortened content -->
+            <p>{{ content.slice(0, 150) }}...</p>
+            <!-- Implement "Read More/Less" button -->
+            <button (click)="toggleReadMore()">Read {{ isExpanded ? 'Less' : 'More' }}</button>
+          </ng-template>
+            <p *ngIf="!isExpanded">{{ content.slice(0, 150) }}...</p>
+            <p *ngIf="isExpanded">{{ content }}</p>
+            <button (click)="toggleReadMore()">Прочети повече {{ isExpanded ? 'Less' : 'More' }}</button>
     </div>
 
     <div class="treatmentOne c">
         <h4>Лечение на кариес, пулпит, гингивит и пародонтит</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus.</p>
-        <button (click)="toggleReadMore()">Прочети повече</button>
+        <div *ngIf="content.length <= 150; else longContent">
+            <!-- <p>{{ content }}</p> -->
+          </div>
+          <ng-template #longContent>
+            <!-- Display shortened content -->
+            <p>{{ content.slice(0, 150) }}...</p>
+            <!-- Implement "Read More/Less" button -->
+            <button (click)="toggleReadMore()">Read {{ isExpanded ? 'Less' : 'More' }}</button>
+          </ng-template>
+            <p *ngIf="!isExpanded">{{ content.slice(0, 150) }}...</p>
+            <p *ngIf="isExpanded">{{ content }}</p>
+            <button (click)="toggleReadMore()">Прочети повече {{ isExpanded ? 'Less' : 'More' }}</button>
     </div>
 
     <div class="treatmentOne d">
         <h4>Рентгенова диагностика</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus.</p>
-        <button (click)="toggleReadMore()">Прочети повече</button>
-    </div>   
+        <div *ngIf="content.length <= 150; else longContent">
+            <!-- <p>{{ content }}</p> -->
+          </div>
+          <ng-template #longContent>
+            <!-- Display shortened content -->
+            <p>{{ content.slice(0, 150) }}...</p>
+            <!-- Implement "Read More/Less" button -->
+            <button (click)="toggleReadMore()">Read {{ isExpanded ? 'Less' : 'More' }}</button>
+          </ng-template>
+            <p *ngIf="!isExpanded">{{ content.slice(0, 150) }}...</p>
+            <p *ngIf="isExpanded">{{ content }}</p>
+            <button (click)="toggleReadMore()">Прочети повече {{ isExpanded ? 'Less' : 'More' }}</button>
+    </div>  
     
     <div class="treatmentOne e">
         <h4>Дентална естетика</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus.</p>
-        <button (click)="toggleReadMore()">Прочети повече</button>
-    </div> 
+        <div *ngIf="content.length <= 150; else longContent">
+            <!-- <p>{{ content }}</p> -->
+          </div>
+          <ng-template #longContent>
+            <!-- Display shortened content -->
+            <p>{{ content.slice(0, 150) }}...</p>
+            <!-- Implement "Read More/Less" button -->
+            <button (click)="toggleReadMore()">Read {{ isExpanded ? 'Less' : 'More' }}</button>
+          </ng-template>
+            <p *ngIf="!isExpanded">{{ content.slice(0, 150) }}...</p>
+            <p *ngIf="isExpanded">{{ content }}</p>
+            <button (click)="toggleReadMore()">Прочети повече {{ isExpanded ? 'Less' : 'More' }}</button>
+    </div>
 
     <div class="treatmentOne f">
         <h4>Протезиране с естетични циркониеви корони, фасети</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus.</p>
-        <button (click)="toggleReadMore()">Прочети повече</button>
-    </div> 
+        <div *ngIf="content.length <= 150; else longContent">
+            <!-- <p>{{ content }}</p> -->
+          </div>
+          <ng-template #longContent>
+            <!-- Display shortened content -->
+            <p>{{ content.slice(0, 150) }}...</p>
+            <!-- Implement "Read More/Less" button -->
+            <button (click)="toggleReadMore()">Read {{ isExpanded ? 'Less' : 'More' }}</button>
+          </ng-template>
+            <p *ngIf="!isExpanded">{{ content.slice(0, 150) }}...</p>
+            <p *ngIf="isExpanded">{{ content }}</p>
+            <button (click)="toggleReadMore()">Прочети повече {{ isExpanded ? 'Less' : 'More' }}</button>
+    </div>
 
     <div class="treatmentOne g">
         <h4>Професионално избелване на зъби</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus.</p>
-        <button (click)="toggleReadMore()">Прочети повече</button>
-    </div> 
+        <div *ngIf="content.length <= 150; else longContent">
+            <!-- <p>{{ content }}</p> -->
+          </div>
+          <ng-template #longContent>
+            <!-- Display shortened content -->
+            <p>{{ content.slice(0, 150) }}...</p>
+            <!-- Implement "Read More/Less" button -->
+            <button (click)="toggleReadMore()">Read {{ isExpanded ? 'Less' : 'More' }}</button>
+          </ng-template>
+            <p *ngIf="!isExpanded">{{ content.slice(0, 150) }}...</p>
+            <p *ngIf="isExpanded">{{ content }}</p>
+            <button (click)="toggleReadMore()">Прочети повече {{ isExpanded ? 'Less' : 'More' }}</button>
+    </div>
 </div>
 
 <!-- <h2>Запазете си час... сега!</h2> -->

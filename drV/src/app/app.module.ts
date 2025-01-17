@@ -13,6 +13,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    // MatExpansionModule,s
+    MatExpansionModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],

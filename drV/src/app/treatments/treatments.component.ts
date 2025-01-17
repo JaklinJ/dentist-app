@@ -7,6 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class TreatmentsComponent {
   isExpanded: boolean = false;
+  content: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit....";
+
 
   toggleReadMore() {
     this.isExpanded = !this.isExpanded;
